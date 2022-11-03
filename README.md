@@ -1,6 +1,5 @@
-# Shor-s-Algorithm
+# Shor's-Algorithm
 
-SHOR’S ALGORITHM
 Although any integer number has a unique decomposition into a product of primes, finding the prime factors is believed to be a hard problem. In fact, the security of our online transactions rests on the assumption that factoring integers with a thousand or more digits is practically impossible. This assumption was challenged in 1995 when Peter Shor proposed a polynomial-time quantum algorithm for the factoring problem. Shor’s algorithm is arguably the most dramatic example of how the paradigm of quantum computing changed our perception of which problems should be considered tractable. In this section we briefly summarize some basic facts about factoring, highlight the main ingredients of Shor’s algorithm, and illustrate how it works by using a toy factoring problem.
 Suppose our task is to factor an integer N with d decimal digits. The brute force algorithm goes through all primes p up to root(N) and checks whether p divides N . In the worst case, this would take time roughly root(N), which is exponential in the number of digits d .  A more efficient algorithm, known as the quadratic sieve, attempts to construct integers a,b such that root(a^2-b^2) is a multiple of  N. Once such a,b are found, one checks whether a± b have common factors with N.The quadratic sieve method has asymptotic runtime exponential in root(d). The most efficient classical factoring algorithm, known as general number field sieve, achieves an asymptotic runtime exponential in cube root(d).
 
